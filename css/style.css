@@ -1,0 +1,323 @@
+
+/* Страница телеграмм-бота */
+.section-telegram {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: 0 center;
+}
+.container {
+    width: 100%;
+    max-width: 1018px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+}
+.header_description {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-left: 25px;
+    border-left: 1px solid #FFFFFF;
+}
+.header_description-text {
+    margin-left: 14px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header_description-text span {
+    font-weight: 700;
+}
+.link-telegram {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #FFFFFF;
+    border-radius: 26px;
+    width: 239px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: -0.5px;
+    color: #0A85D9;
+    margin-left: auto;
+}
+.link-telegram_logo {
+    margin-right: 11px;
+    width: 36px;
+    height: 36px;
+}
+.faq-telegram {
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 88px rgba(86, 44, 147, 0.292282);
+    border-radius: 24px;
+    margin-bottom: 50px;
+}
+.faq_bottom {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+}
+.faq_bottom-logo {
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.faq_bottom-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    color: #000000;
+}
+.faq_bottom-title a {
+    color: #199AE1;
+}
+.accordion_item {
+    padding: 24px 34px 24px 24px;
+    background: #F5F3FF;
+    border-radius: 21px;
+}
+.accordion .accordion_item .head .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.333333px;
+    color: #000000;    
+}
+.accordion .accordion_item .icon {
+    width: 34px;
+    height: 34px;
+}
+.accordion .accordion_item.active .icon {
+    transform: rotate(180deg);
+}
+.accordion .accordion_item .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.accordion .accordion_item .data {
+    margin-top: 35px;
+}
+.accordion .accordion_item + .accordion_item {
+    margin-top: 25px;
+}
+.accordion .accordion_item .socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -40px;
+    margin-bottom: -29px;
+}
+.accordion .accordion_item .socials > * {
+    width: calc(100%/6 - 40px);
+    margin-left: 40px;
+    margin-bottom: 29px;
+    display: flex;
+    align-items: center;
+}
+.accordion .accordion_item .social_text {
+    margin-left: 11px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.266667px;
+    color: #8B82B7;
+}
+.accordion_item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.266667px;    
+    color: #625C7E;
+    margin-bottom: 35px;
+}
+.accordion .accordion_item .payment {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: -40px;
+    margin-bottom: -29px;
+}
+.accordion .accordion_item .payment > * {
+    width: calc(100%/6 - 40px);
+    margin-left: 40px;
+    margin-bottom: 29px;
+    display: flex;
+    align-items: center;
+}
+.accordion .accordion_item .income {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -29px;
+}
+.accordion .accordion_item .income > * {
+    width: calc(100%/4 - 30px);
+    margin-left: 30px;
+    margin-bottom: 29px;
+    display: flex;
+    align-items: center;
+}
+.faq_top {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq_top-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    color: #000000;  
+}
+.faq_top .link-telegram {
+    color: #fff;
+    background: linear-gradient(135deg, #33BEF0 14.65%, #0A85D9 85.35%);
+}
+.social_img {
+    flex-shrink: 0;
+}
+.link-telegram {
+    white-space: nowrap;
+}
+.link-telegram_logo {
+    flex-shrink: 0;
+}
+
+@media (max-width: 1023px) {
+    .accordion .accordion_item .socials > * {
+        width: calc(100%/3 - 40px);
+    }
+    .accordion .accordion_item .payment > * {
+        width: calc(100%/4 - 40px);
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .accordion .accordion_item .socials > * {
+        width: calc(100%/2 - 40px);
+    }
+    .accordion .accordion_item .payment > * {
+        width: calc(100%/2 - 40px);
+    }
+    .accordion .accordion_item .income > * {
+        width: calc(100%/2 - 30px);
+    }
+    header {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    header .link-telegram {
+        width: 100%;
+        margin-top: 18px;
+    }
+    .header_description {
+        margin-right: auto;
+    }
+    .accordion .accordion_item .icon {
+        flex-shrink: 0;
+    }
+    .faq_top-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+}
+
+
+@media (max-width: 620px) {
+    .faq_top {
+        flex-direction: column;
+    }
+    .faq_top .link-telegram {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .accordion .accordion_item .socials {
+        margin-left: 0;
+    }
+    .accordion .accordion_item .socials > * {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .accordion .accordion_item .payment {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .accordion .accordion_item .payment > * {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .accordion .accordion_item .income {
+        margin-left: 0;
+    }
+    .accordion .accordion_item .income > * {
+        margin-left: 0;
+        width: 100%;
+    }
+    .faq_bottom {
+        flex-direction: column;
+    }
+    .faq_bottom-title {
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    header {
+        flex-direction: column;
+    }
+    .header_description {
+        padding-left: 0px;
+        margin-left: auto;
+        border-left: none;
+        margin-top: 15px;
+    }
+    header .link-telegram {
+        max-width: 280px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .faq-telegram {
+        padding: 20px;
+    }
+    .accordion .accordion_item .head .title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .accordion_item {
+        padding: 20px;
+    }
+    .accordion_item-text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    .accordion .accordion_item .payment {
+        margin-bottom: 0px;
+    }
+    .accordion .accordion_item .socials {
+        margin-bottom: 0;
+    }
+
+}
